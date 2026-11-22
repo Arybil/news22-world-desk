@@ -9,7 +9,7 @@ import os
 import shutil
 import sys
 
-SRC = "entry.png"
+SRC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "entry.png")
 MAX_DIM = 1024
 MAX_BYTES = 1 << 20
 PNG_SIG = b"\x89PNG\r\n\x1a\n"
